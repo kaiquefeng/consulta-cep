@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 100vh;
+
+  .searchBox {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem 0;
+
+    input {
+      border: 0;
+      padding: 1rem 2rem;
+      margin: 1rem 0;
+
+      min-width: 19rem;
+    }
+  }
+}
