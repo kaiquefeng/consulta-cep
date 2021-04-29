@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from '../styles/home.module.scss'
-import api from './services/api'
+import api from '../services/api'
 
 type FullInfoCepProps = {
   cep: string,
