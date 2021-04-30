@@ -29,6 +29,7 @@ export default function Home() {
       })
       .catch(() => {
         setError(true)
+        setIsSearch(false)
       })
   }
 
