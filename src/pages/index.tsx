@@ -12,7 +12,6 @@ type FullInfoCepProps = {
   street: string
 }
 
-
 export default function Home() {
   const [isCep, setIsCep] = useState('')
   const [fullInfoCep, setFullInfoCep] = useState<FullInfoCepProps>()
@@ -26,6 +25,7 @@ export default function Home() {
       .then(result => {
         setFullInfoCep(result.data)
         setIsSearch(true)
+        setError(false)
       })
       .catch(() => {
         setError(true)
@@ -33,7 +33,6 @@ export default function Home() {
   }
 
   function clearCep() {
-    setFullInfoCep([])
     setIsSearch(false)
   }
 
