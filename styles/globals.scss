@@ -1,3 +1,13 @@
+:root {
+  --background: #111926;
+  --white: #FFFFFF;
+
+  --gray-200: #c6c6d4;
+
+  --green: #04D361;
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -6,8 +16,6 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: 'Heebo', sans-serif;
 }
 
@@ -20,8 +28,23 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+button {
+  cursor: pointer;
+}
+
+input, textarea, select {
+  border: 0;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+
+  height: 4.5rem;
+
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+
+  outline: 0;
+
+  &::placeholder {
+    color: var(--gray-200);
+  }
 }
