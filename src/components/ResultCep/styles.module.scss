@@ -19,7 +19,7 @@
       margin-top: 1rem;
 
       text-align: center;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
     }
   }
 
@@ -33,12 +33,29 @@
 
     .card {
       margin: 2rem 0;
-      background: #FAFAFC;
+      background: #fafafc;
       border-radius: 8px;
-      border: 1px solid #E6E6F0;
+      border: 1px solid #e6e6f0;
       padding: 2rem 1.5rem;
 
       width: 70%;
+      position: relative;
+
+      .copyButton {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 5px 10px;
+        background: rgb(137, 140, 162) none repeat scroll 0% 0%;
+        border: 0;
+        border-radius: 0 8px 0 8px;
+        color: var(--white);
+        transition: 0.4s;
+
+        &:hover {
+          background: var(--green);
+        }
+      }
 
       ul {
         list-style: none;
@@ -53,7 +70,7 @@
       }
     }
 
-    button {
+    .buttonSubmit {
       width: 50%;
       background: var(--green);
       height: 4.5rem;
@@ -65,7 +82,7 @@
       font-size: 1.125rem;
       color: #fff;
 
-      transition: filter  0.2s;
+      transition: filter 0.2s;
 
       &:hover {
         filter: brightness(0.9);
@@ -79,7 +96,6 @@
     margin-bottom: 7rem;
 
     .noCep {
-
       h4 {
         font-size: 1.75rem;
       }

@@ -1,7 +1,7 @@
 .searchBox {
   text-align: center;
   background: var(--background);
-  background-image: url('../../../public/images/back.png');
+  background-image: url("../../../public/images/back.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -33,7 +33,7 @@
           width: calc(100% - 3.2rem);
           height: 5px;
           border-radius: 1.25rem 1.25rem 0 0;
-          content: '';
+          content: "";
           background: var(--green);
           position: absolute;
           left: 1.6rem;
@@ -48,6 +48,7 @@
       height: 4.5rem;
       width: 4.5rem;
       margin-left: 0.75rem;
+      border: 0;
 
       display: flex;
       align-items: center;
@@ -56,7 +57,7 @@
       border-radius: 8px;
       cursor: pointer;
 
-      transition: filter  0.2s;
+      transition: filter 0.2s;
 
       &:hover {
         filter: brightness(0.9);
